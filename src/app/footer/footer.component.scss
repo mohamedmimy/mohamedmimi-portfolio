@@ -1,0 +1,95 @@
+.footer
+{
+  .footer-top
+  {
+    background-color: #f7f7f7;
+  }
+  .imge-footer
+  {
+    width: 80px;
+  }
+  img
+  {
+    border-radius: 50%;
+  }
+  ul
+  {
+    list-style: none;
+  }
+  li a
+  {
+    color: rgba(0,0,0,.5);
+    font-size: 1.3rem;
+    text-decoration: none;
+  }
+  li a:hover
+  {
+    color: #484e53;
+  }
+  
+
+  .footer-social_icons
+  {
+    ul
+    {
+      margin-left: 5rem;
+    }
+    li
+    {
+      padding: 10px;
+    }
+    li a
+    {
+      padding: 1rem 1.4rem;
+      border-radius: 50%;
+      border:2px solid #484e53;
+      font-size: 2rem;
+    }
+    li:hover
+    {
+      color: blue;
+    }
+  }
+
+
+  .footer-copyright
+  {
+    background-color: #eeecec;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width:900px)
+{
+  .footer-social_icons
+  {
+    padding-top: 2rem;
+  }
+}
+@media (max-width:767px)  // mobaile & tablate
+{
+  .footer .imge-footer
+  {
+    align-items: center;
+  }
+
+  .footer-social ul a
+  {
+   margin-top: 6rem;
+    color:#484e53;
+  }
+}
+// @media(min-width:768px)  // small screan Rullse
+// {
+//   .footer .footer-social_icons
+//   {
+//   }
+// }
+
+
+/*
+ facebook color #385c8e
+ instgram color
+ linkedin color
+ 1252 px
+*/

@@ -1,0 +1,93 @@
+.contact {
+  position: relative;
+
+  .contact-text h2::after
+  {
+    content: '';
+    position: absolute;
+    top: 180px;
+    left: 43%;
+    width: 35px;
+    height: 2px;
+    background-color: #484e53;
+
+  }
+  .contact-text {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+  .contact-text h2 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .gitInTuch {
+    padding: 1rem;
+    box-shadow: 0 5px 15px 0 rgba(68, 68, 68, 0.1);
+  }
+  .content-form h2 {
+    text-align: center;
+
+    margin: 2rem;
+  }
+  .form-field input {
+    width: 100%;
+    padding: 1rem;
+    border: 0px;
+    border-bottom: 1px solid #9e9b9b;
+    margin-bottom: 1rem;
+  }
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 0px;
+    border-bottom: 1px solid #9e9b9b;
+    margin-bottom: 1rem;
+  }
+  .form-submit {
+    padding: 2rem 1rem;
+    button {
+      width: 14rem;
+      background-color: #3333;
+      color: #484e53;
+      border-radius: 2rem;
+      font-size: 1.3rem;
+      border: none;
+    }
+  }
+  .contact-info
+  {
+    overflow: hidden;
+    .info-item
+    {
+      padding: 3rem;
+      box-shadow: 0 5px 15px 0 rgba(68, 68, 68, 0.1);
+    }
+    .info-icon
+    {
+      padding: 1.5rem 2rem;
+      box-shadow: 0 5px 15px 0 rgba(68, 68, 68, 0.1);
+      border-radius: 50%;
+      font-size: 3rem;
+      color: #484e53;
+    }
+    h2
+    {
+      font-size: 1.5rem;
+    }
+    h4
+    {
+      margin-left: 2rem;
+      margin-top: 3rem;
+    }
+  }
+}
+
+@media (max-width:767)
+{
+
+  .contact-info .info-item h2
+  {
+    font-size: 5rem;
+  }
+}

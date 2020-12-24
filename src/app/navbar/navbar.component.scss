@@ -1,0 +1,129 @@
+/* ===================================   navBar =====================*/
+.navInvers{
+
+  background-color: rgba(0, 0, 0, 0.856);
+  .navbar .navbar-brand
+  {
+    color: rgb(201, 201, 201);
+  }
+
+  .navbar-light .navbar-nav .nav-link
+  {
+    color: rgb(201, 201, 201);
+  }
+  }
+
+.imgProfile{
+  background-image: url("/../assets/images/66.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-position-y: -0.4rem;
+  width: 6rem;
+  height: 6rem;
+  margin-left: 3rem;
+  border-radius: 50%;
+}
+
+.navbar{
+  width: 90%;
+  z-index: 99999999999;
+  .navbar-brand{
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #484e53;
+  }
+  .navbar-nav .nav-item i{
+    font-size: 1.5rem;
+  }
+  .navbar-nav .nav-link{
+    font-size: 1.3rem;
+
+  }
+}
+// ************************************ Responsive nav in Small Screen
+@media (min-width:520px)
+{
+  .navbar-light .navbar-toggler
+    {
+      background-color: rgb(201, 201, 201);
+    }
+  .imgProfile{
+    width: 6rem;
+    height: 5rem;
+    border: 2px solid rgb(201, 201, 201);
+    margin-bottom: 0.6rem;
+  }
+  #navbarNavAltMarkup{
+    width: 30%;
+  }
+  .navbar-brand{
+    width: 40%;
+  }
+  .nav-i-link{
+    width: 25%;
+    display: inline-flex;
+    float: right;
+  }
+}
+//=================================================== Responsive nav in Mediam Screen
+@media (min-width:900px)  // mobile & tablate
+{
+  .navbar-light .navbar-toggler
+    {
+      background-color: rgb(201, 201, 201);
+    }
+  .imgProfile
+  {
+    width: 5.5rem;
+    height: 5rem;
+    border: 2px solid rgb(201, 201, 201);
+    margin-bottom: 0.6rem;
+  }
+  #navbarNavAltMarkup
+  {
+    width: 30%;
+  }
+  .navbar-nav a
+  {
+    color: rgb(201, 201, 201);
+  }
+  .navbar-nav a:hover
+  {
+    background-color: rgba(124, 124, 124, 0.178);
+    color: #fff;
+  }
+  .navbar-brand{
+    width: 30%;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .nav-i-link{
+    width: 25%;
+    float: right;
+  }
+}
+//=================================================== Responsive nav in larg Screen
+
+@media (min-width:990px)
+{
+  .imgProfile{
+    width: 5.5rem;
+    height: 5rem;
+    border: 2px solid rgb(201, 201, 201);
+    margin-bottom: 0.6rem;
+  }
+  .navbar{
+    width: 90%;
+  }
+  .nav-i-link{
+    width: 25%;
+    float: right;
+    color: #255525;
+  }
+  .navbar-light .navbar-nav .nav-link{
+    font-size: 1rem !important;
+    font-weight: 600;
+    letter-spacing: 1px !important;
+  }
+}
+

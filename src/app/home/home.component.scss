@@ -1,0 +1,96 @@
+.home
+{
+  height: 100vh;
+  .home-caption
+  {
+    position: absolute;
+    top: 11rem;
+    left: 8rem;
+  }
+  .home-caption h1,h2,h4
+  {
+    color: #484e53;
+    line-height: 1.4;
+  }
+
+  // ============= Dowenload CV
+  .Dowenload-Cv
+  {
+    background-color: #3333;
+    color: #484e53;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: 1s all ease-in-out linear;
+    -webkit-transition:1s all ease-in-out linear ;
+    -moz-transition: 1s all ease-in-out linear;
+  }
+  .Dowenload-Cv:hover
+  {
+    border: 2px solid #484e53;
+  }
+  // ============= Scroll button
+
+  .scroll
+  {
+
+    padding: 1.7rem 1rem;
+    border-radius: 20px ;
+    border: 2px solid #484e53;
+    position: absolute;
+     top: 2.3rem;
+     left: 50%;
+  }
+  .scroll:after
+  {
+    content:"" ;
+    position: absolute;
+    background-color: #484e53;
+    width: 8px;
+    height: 8px;
+    top:0.6rem;
+    left: 40%;
+    border-radius: 50%;
+    animation: scroll 2s  infinite ;
+  }
+
+  @keyframes scroll
+  {
+    0%{bottom: 50px; }
+    25%{top: 40px;}
+
+    100%{bottom: 0px;}
+  }
+//  home-img
+.home-img
+  {
+   margin-top: 10rem;
+
+   img
+   {
+     width: 200%;
+   }
+  }
+}
+//  ============================================== media Ressposive
+@media (max-width:768px)
+{
+    .home-img
+  {
+    display: none;
+  }
+  .home .scroll
+  {
+    display: none;
+  }
+}
+
+@media (min-width:769px) and (max-width:900px) // mobile & tablate
+{
+  .home .scroll
+  {
+    display: none;
+  }
+}
