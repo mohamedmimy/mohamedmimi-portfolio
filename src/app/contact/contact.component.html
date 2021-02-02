@@ -1,55 +1,85 @@
 <!-- ************************************ Start contact-Section ************************************ -->
 <section id="contact" class="contact mt-5 pt-5">  <!-- ========== start section contact ==========-->
-  <div class="contact-text my-5 ">  <!-- -------- contact-text ----------->
-    <h2>Let’s Talk</h2>
+  <div class="contact-text my-5" data-aos="flip-down" data-aos-duration="2200">  <!-- -------- contact-text ----------->
+    <h2 >Let’s Talk</h2>
   </div>
+
   <div class="container py-5">
     <div class="row">
         <div class="col-lg-6 col-md-12"> <!-- -------- content-form----------->
-         <div class="gitInTuch">
+         <div class="gitInTuch" data-aos="flip-left" data-aos-duration="3000">
           <div class="content-form">  <!-- ------- Git In Touch ------- -->
             <h2>Git In Touch</h2>
-            <form action="" class="form">
+
+            <form
+               [formGroup]= "submitForm" (ngSubmit)="getFormData(submitForm)"
+
+               class="form">
               <div class="row">
                 <div class="col-lg-6 col-md-12">  <!-- -------- Form Field input name----------->
                   <div class="form-field">
-                    <input type="text" name="name" placeholder="Name" value="">
-                  </div>
+
+                    <input
+                      formControlName="firstName"
+                      type="text" name="firstName" placeholder="first Name" value="">
+                      <span *ngIf="submitForm.get('firstName').invalid == true
+                      && submitForm.get('firstName').touched == true"
+                      class="text-danger d-block p-2">firstName not Valid</span>
+
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-12">  <!-- -------- Form Field input lastName----------->
                   <div class="form-field">
-                    <input type="text" name="Lastname" placeholder="Last Name" value="">
+                    <input
+                    formControlName="LastName"
+                    type="text" name="Lastname" placeholder="Last Name" value="">
+                    <span *ngIf="submitForm.get('LastName').invalid == true
+                      && submitForm.get('LastName').touched == true"
+                      class="text-danger d-block p-2">LastName not Valid</span>
                   </div>
                 </div>
                 <div class="col-md-12">  <!-- -------- Form Field input email----------->
                   <div class="form-field">
-                    <input type="email" name="email" placeholder="Email" value="">
+
+                    <input
+                    formControlName="email"
+                    type="email" name="email" placeholder="Email" value="">
+                    <span *ngIf="submitForm.get('email').invalid == true
+                      && submitForm.get('email').touched == true"
+                      class="text-danger d-block p-2">Email not Valid</span>
                   </div>
                 </div>
                 <div class="col-md-12">  <!-- -------- Form Field input subject----------->
                   <div class="form-field">
-                    <input type="text" name="subject" placeholder="Subject" value="">
+
+                    <input
+                    formControlName="subject"
+                    type="text" name="subject" placeholder="Subject" value="">
+
                   </div>
                 </div>
                 <div class="col-md-12">  <!-- -------- Form Field input message----------->
                   <div class="form-field">
-                    <textarea name="message"  placeholder="Message"></textarea>
+                    <textarea
+                    formControlName="message"
+                    name="message"  placeholder="Message"></textarea>
                   </div>
                 </div>
                 <div class="col-md-12">  <!-- -------- Form Field input submit----------->
                   <div class="form-submit text-center  mt-3">
-                    <button type="submit" class="info-btn p-3">Send Message</button>
+                    <button [disabled]= 'submitForm.invalid' type="submit" class="info-btn p-3">Send Message</button>
                   </div>
+
                 </div>
               </div>
             </form>
           </div>
          </div>
         </div>
-      
+
       <div class="col-lg-6 col-md-12"> <!-- -------- contact-info----------->
         <div class="contact-info">
-          <div class="info-item">  <!-- -------- contact-info_email ----------->
+          <div class="info-item" data-aos="fade-left" data-aos-duration="2600">  <!-- -------- contact-info_email ----------->
             <h2>mohamedmimy1911@gmail.com</h2>
             <div class="info d-flex">
               <div class="info-icon">
@@ -58,7 +88,7 @@
               <h4>Official Mail</h4>
             </div>
           </div>
-          <div class="info-item mt-5">  <!-- -------- contact-info_phonNumber ----------->
+          <div class="info-item mt-5" data-aos="fade-left" data-aos-duration="3000">  <!-- -------- contact-info_phonNumber ----------->
             <h2>(002)o114183467</h2>
             <div class="info d-flex">
               <div class="info-icon ">

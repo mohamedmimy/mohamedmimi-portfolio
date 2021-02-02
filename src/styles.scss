@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~animate.css/animate.css";
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+*body{
+  font-family: 'Sansita Swashed', cursive;
+}
 *
 h2,h1,h3,h4
 {
@@ -9,8 +14,4 @@ h2
 {
   font-size: 2rem;
     font-weight: 900;
-}
-*
-body{
-  font-family: 'Sansita Swashed', cursive;
 }

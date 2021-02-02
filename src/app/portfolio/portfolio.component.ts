@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  constructor(){
+   }
+
 
   ngOnInit(): void {
+    AOS.init();
   }
 
+  rest(){
+    
+  }
 }

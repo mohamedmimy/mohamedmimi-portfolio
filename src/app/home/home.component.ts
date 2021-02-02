@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgwWowService } from 'ngx-wow';
 import Typed from 'typed.js';
 declare var $: any;
 
@@ -8,13 +9,13 @@ declare var $: any;
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  constructor(){
-    // tslint:disable-next-line: no-var-keyword
-
-  }
+  constructor(){ }
 
   ngOnInit(): void {
-    let typed = new Typed('.effact', {
+    // plugin WoWJS
+
+    // plugin TypedJS
+    const typed = new Typed('.effact', {
       strings: [
         'Front End Developer ',
          'Digital marketing specialist'
@@ -23,6 +24,9 @@ export class HomeComponent implements OnInit {
       fadeOut: true,
       loop: true
     });
+  }
+
+  rest(){
   }
 
 }
